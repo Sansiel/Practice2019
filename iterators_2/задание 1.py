@@ -17,6 +17,16 @@ l = {'RPG': 'Black_Desert','Shooter': 'Warframe','Strategy': 'Civilization',}
 print ({v:k for k, v in l.items()})
 
 #Дубликаты
-source_vocebulary = {1,1,2,2,2,3,3,4,5,5}
+
+source_vocebulary = [7,4,1,1, 8, 8]
 generate_vocebulary = set(source_vocebulary)
+print(generate_vocebulary)
+
+#Дубликаты. С сохранением порядка. В задании нигде не было про сохранение порядка, и без сохранения строчек меньше.
+
+source_vocebulary = [7,4,1,1, 8, 8]
+generate_vocebulary=[]
+for value in source_vocebulary:
+    if value not in generate_vocebulary:
+        generate_vocebulary.append(value)
 print(generate_vocebulary)
